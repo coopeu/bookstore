@@ -1,0 +1,19 @@
+<h1>Authors index</h1>
+
+
+<table class='table table-striped'>
+	<tr>
+		<th>First Name</th>
+		<th>Last Name</th>
+		<th>Actions</th>
+	</tr>
+	<% @authors.each do |author| %>
+	<tr>
+		<td><%= author.first_name %></td>
+		<td><%= author.last_name %></td>
+		<td><%= link_to 'Edit', edit_author_path(author.id) %> | 
+			<%= link_to 'Delete', author_path(author.id), method: :destroy, data: {confirm: 'Are you sure to delete this author?'} %>
+		</td>
+	</tr>
+	<% end %>
+</table>

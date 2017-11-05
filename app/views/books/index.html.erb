@@ -1,0 +1,75 @@
+<div id='books-index'>
+
+<% @books.each_slice(4) do |book| %>
+	<div class='row'>
+	<% book.each do |book| %>
+		<div class='col-md-3 col-sm-3'>
+		<h3><%= book.title %></h3>
+		<%= image_tag(book.coverpath) %>
+		<%= link_to 'Read more', book_path(book), class:'btn btn-primary' %>
+		</div>
+	<% end %>
+<% end %>	
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Bible</h3>
+			<%= image_tag('bookcovers/2.jpg') %>
+			<%= link_to 'Read more', book_path(2), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/3.jpg') %>
+			<%= link_to 'Read more', book_path(3), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/4.jpg') %>
+			<%= link_to 'Read more', book_path(4), class:'btn btn-primary' %>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/1.jpg') %>
+			<%= link_to 'Read more', book_path(1), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/6.jpg') %>
+			<%= link_to 'Read more', book_path(6), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/7.jpg') %>
+			<%= link_to 'Read more', book_path(7), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/8.jpg') %>
+			<%= link_to 'Read more', book_path(8), class:'btn btn-primary' %>
+		</div>
+	</div>
+	<div class='row'>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/9.jpg') %>
+			<%= link_to 'Read more', book_path(9), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/10.jpg') %>
+			<%= link_to 'Read more', book_path(10), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/11.jpg') %>
+			<%= link_to 'Read more', book_path(11), class:'btn btn-primary' %>
+		</div>
+		<div class='col-md-3 col-sm-3'>
+			<h3>Ruby on Rails Power Bible</h3>
+			<%= image_tag('bookcovers/12.jpg') %>
+			<%= link_to 'Read more', book_path(12), class:'btn btn-primary' %>
+		</div>
+	</div>		
+</div>
+
+
